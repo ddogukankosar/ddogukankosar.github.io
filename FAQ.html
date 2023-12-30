@@ -1,0 +1,223 @@
+<html>
+    <head>
+
+        <title>FAQ</title>
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <script src="./script.js"></script>
+        <style>
+            
+            #aboutMe{
+                color:rgb(170, 157, 144);
+            }
+
+            #container{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+            .cont2{
+                width: 100%;
+                text-align: left;
+                align-items: center;
+                justify-content: center;
+                margin-top:2vh;
+                padding-top:2vh;
+
+            }
+            /*PX OLAN YERLERI DUZELT*/
+            button{ 
+                position: relative;
+                width: 100%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: transparent;
+                text-align: left;
+                font-size: 1.2em;
+                font-weight: bolder;
+                border-bottom: 2px solid currentColor;
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button i{
+                margin-left: 16px;
+            }
+
+            button i.fa-minus{
+                display: none;
+            }
+
+            .response{
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                transition: opacity 0.4s linear, max-height 0.4s linear;
+                padding-bottom: 4vh;
+            }
+
+            button.opened ~ .response{
+                opacity: 1;
+                max-height: 150px;
+                transition: opacity 0.4s linear, max-height 0.4s linear;
+            }
+
+            button.opened i.fa-plus{
+                display: none;
+            }
+
+            button.opened i.fa-minus{
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+     
+  
+        <div id="menu">
+            <div id="home" class="menuItems" onclick="location.href='index.html';">Home</div>
+            <div id="aboutMe" class="menuItems" onclick="location.href='FAQ.html';" >FAQ</div>
+            <div id="appForm" class="menuItems" onclick="location.href='AppForm.html';">Application Form</div>
+            <div id="contact" class="menuItems" onclick="location.href='Contact.html';">Contact</div>
+        </div>
+ 
+          
+        <div id="container">
+            <div class="contItems">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <div class="cont2">
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                Why should I date DDK?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    
+                        <p class="response">
+                           Because he is fun, sensitive and cares about the person he loves. Moreover, he knows how to make you happy! Last but not least, he desperately needs a European passport.
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                What are the physical advantages for my children to inherit from DDK?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                            He is a curly guy who is 192 cm (6' 3.6"). He is neither a Tom Cruise nor a Brad Pitt; still looks kinda cute though...
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                What are the other advantages for my children to inherit from DDK?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                           He is a pretty intelligent and logical guy. 
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                What are the hobbies of my DDK?
+
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                           Reading, cycling, watching movies, and debating. 
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                Which kind of music does my DDK like?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                            It pretty much depends on the circumstances. Generally; he listens to Chanson, Jazz and Blues. He is a chill guy, so are his music preferences... 
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                How can I make my DDK happy?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                            Feed him, give him coffee, pet him and hug him. That would be enough to make him happy!
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                                What kind of movies does he like?
+                            </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                            He mostly preffers either Drama or Comedy.
+                        </p>
+                    </div>
+    
+                    <div class="ac-item">
+                        <button style="color:black">
+                            <span class="title">
+                            What else shall I know about DDK?
+
+                        </span>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <p class="response">
+                            He is kind of an introvert person; therefore he might not know how to hold a conversation properly. Nonetheless, once you get to know him, you'll figure it out that he is a pretty nice guy who is willing to talk to you!
+
+
+                        </p>
+                    </div>
+
+            </div>
+           
+        </div>
+   
+    </body>
+</html>
