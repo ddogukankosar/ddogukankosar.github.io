@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #appForm {
+            color: rgb(170, 157, 144);
+        }
+
+        #container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #text1 {
+            width: 50vw;
+        }
+
+        #fs1 {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Additional styles for the form */
+        #applicationForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, select {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 10px;
+        }
+
+        input, select, textarea {
+            width: 50%;
+            height: 40px;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        select.center-option {
+            text-align: center;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        #confirmButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        iframe{
+            overflow: hidden;    
+        }
+
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <div id="home" class="menuItems" onclick="location.href='index.html';">Home</div>
+        <div id="aboutMe" class="menuItems" onclick="location.href='FAQ.html';">FAQ</div>
+        <div id="appForm" class="menuItems" onclick="location.href='AppForm.html';">Application Form</div>
+        <div id="contact" class="menuItems" onclick="location.href='Contact.html';">Contact</div>
+    </div>
+    <div id="container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXANeS0OlX_MdYwcb402tX8P0wOsu9tlABSaZR_jIgGxCKgg/viewform?embedded=true" width="640" height="2000" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+    </div>
+
+    <script>
+
+
+        $(document).ready(function(){
+            alert('Application form will be available soon. Just wait!  ');
+        });
+    </script>
+
+
+</body>
+</html>
